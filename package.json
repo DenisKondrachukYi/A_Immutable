@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "precommit": "yarn test",
     "prepush": "lint-staged",
+    "precommit": "lint-staged",
     "stylelint": "stylelint \"src/**/*.css\"",
     "start": "ng serve",
     "build": "ng build",
