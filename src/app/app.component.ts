@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Map } from 'immutable';
 
 @Component({
@@ -6,7 +6,7 @@ import { Map } from 'immutable';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   slogan = 'Just movie information';
   title = 'Terminator 1';
   actor = Map({
