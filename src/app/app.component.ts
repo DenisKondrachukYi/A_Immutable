@@ -6,7 +6,7 @@ import { Map } from 'immutable';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   slogan = 'Just movie information';
   title = 'Terminator 1';
   actor = Map({
