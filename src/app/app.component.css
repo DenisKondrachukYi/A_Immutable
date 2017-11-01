@@ -2,3 +2,72 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.ui-tooltip {
+  position: absolute;
+  display: none;
+  padding: 0.25em 0.5em;
+  max-width: 400px;
+  height: auto;
+}
+
+.ui-tooltip.ui-tooltip-right,
+.ui-tooltip.ui-tooltip-left {
+  padding: 0 0.25em;
+}
+
+.ui-tooltip.ui-tooltip-top,
+.ui-tooltip.ui-tooltip-bottom {
+  padding: 0.25em 0;
+}
+
+.ui-tooltip .ui-tooltip-text {
+  padding: 0.125em 0.5em;
+  background-color: rgb(76, 76, 76);
+  color: #fff;
+  white-space: pre-line;
+}
+
+.ui-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.ui-tooltip-right .ui-tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -0.25em;
+  border-width: 0.25em 0.25em 0.25em 0;
+  border-right-color: rgb(76, 76, 76);
+}
+
+.ui-tooltip-left .ui-tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -0.25em;
+  border-width: 0.25em 0 0.25em 0.25em;
+  border-left-color: rgb(76, 76, 76);
+}
+
+.ui-tooltip.ui-tooltip-top {
+  padding: 0.25em 0;
+}
+
+.ui-tooltip-top .ui-tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.25em;
+  border-width: 0.25em 0.25em 0;
+  border-top-color: rgb(76, 76, 76);
+}
+
+.ui-tooltip-bottom .ui-tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -0.25em;
+  border-width: 0 0.25em 0.25em;
+  border-bottom-color: rgb(76, 76, 76);
+}

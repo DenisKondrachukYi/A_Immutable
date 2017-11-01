@@ -1,6 +1,11 @@
- <h1>MovieApp</h1>
-    <p>{{ slogan }}</p>
-    <button type="button" (click)="changeActor()">
-      Change Actor
-    </button>
-    <app-movie [title]="title" [actor]="actor"></app-movie>
+<h1 [pTooltip]="d">MovieApp</h1>
+<p>{{ slogan }}</p>
+<p #d>sfsdfsdf
+  <span>
+    <icon>sd</icon>
+  </span>
+</p>
+<button #d type="button" (click)="changeActor()">
+  Change Actor
+</button>
+<app-movie [title]="title" [actor]="actor"></app-movie>
